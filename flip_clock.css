@@ -183,6 +183,7 @@ html {
   border: 2px solid var(--color-gray);
   box-shadow: 0 0 6px var(--color-gray) inset;
   background-color: var(--color-dark);
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   overflow: hidden;
   display: flex;
