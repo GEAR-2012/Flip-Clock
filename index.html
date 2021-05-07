@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip Clock</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="flip_clock.css" />
+    <!-- JavaScript -->
+    <script src="flip_clock.js" defer></script>
+  </head>
+  <body>
+    <!-- START OF FLIP CLOCK -->
+    <div class="flip-clock-cont">
+      <!-- the actual flip clock body -->
+      <div id="flip-clock-1" class="flip-clock">
+        <!-- clock 'brand-name' -->
+        <h1 class="title">OneWeb</h1>
+        <!-- the actual clock display -->
+        <div id="wheel-container-1" class="wheel-container">
+          <!-- front section -->
+          <div class="front-sec">
+            <!-- time format switch tfs-->
+            <div class="tfs-cont">
+              <input class="tfs-chk-box" type="checkbox" name="tfs-chk-box" id="tfs-chk-box" />
+              <label class="tfs-lbl" for="tfs-chk-box">
+                <div class="tfs-bg">
+                  <div class="tfs-switch"></div>
+                </div>
+              </label>
+            </div>
+
+            <!-- prefix window -->
+            <div class="prefix-win">
+              <div class="prefix-slider">
+                <span class="prefix-text-holder">AM</span>
+                <span class="prefix-text-holder">PM</span>
+              </div>
+            </div>
+          </div>
+          <!-- wheel 1 -->
+          <div id="wheel-1" class="wheel">
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">A1</span></div>
+              <div class="back-side">
+                <span class="text-holder">A2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">B1</span></div>
+              <div class="back-side">
+                <span class="text-holder">B2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">C1</span></div>
+              <div class="back-side">
+                <span class="text-holder">C2</span>
+              </div>
+            </div>
+          </div>
+          <!-- wheel 2 -->
+          <div id="wheel-2" class="wheel">
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">A1</span></div>
+              <div class="back-side">
+                <span class="text-holder">A2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">B1</span></div>
+              <div class="back-side">
+                <span class="text-holder">B2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">C1</span></div>
+              <div class="back-side">
+                <span class="text-holder">C2</span>
+              </div>
+            </div>
+          </div>
+          <!-- wheel 3 -->
+          <div id="wheel-3" class="wheel">
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">A1</span></div>
+              <div class="back-side">
+                <span class="text-holder">A2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">B1</span></div>
+              <div class="back-side">
+                <span class="text-holder">B2</span>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front-side"><span class="text-holder">C1</span></div>
+              <div class="back-side">
+                <span class="text-holder">C2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="leg left"></div>
+        <div class="leg right"></div>
+      </div>
+    </div>
+    <!-- END OF FLIP CLOCK -->
+  </body>
+</html>
