@@ -22,8 +22,8 @@ So this way we have a nested array with wheels and flips
 */
 let flipsOnWheels = [];
 let wheels = document.querySelectorAll("#wheel-container-1 > .wheel");
-wheels.forEach((item) => {
-  let flips = [...item.querySelectorAll(".flip")];
+wheels.forEach((wheel) => {
+  let flips = [...wheel.querySelectorAll(".flip")];
   flipsOnWheels.push(flips);
 });
 
@@ -120,12 +120,12 @@ function initSet() {
   // show or hide prefix window as required
   if (timeFormat24) {
     // tfsTxt.textContent = "24";
-    prefixWin.classList.add("prefix-win-off");
     prefixWin.classList.remove("prefix-win-on");
+    prefixWin.classList.add("prefix-win-off");
   } else {
     // tfsTxt.textContent = "12";
-    prefixWin.classList.add("prefix-win-on");
     prefixWin.classList.remove("prefix-win-off");
+    prefixWin.classList.add("prefix-win-on");
   }
 
   // set up each flips on each wheels to they initial positions
